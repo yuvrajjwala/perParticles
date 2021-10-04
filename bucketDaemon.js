@@ -13,7 +13,7 @@ self.addEventListener('message', e => {
       bucket.nodes.forEach((node, i) => {
         bucket.nodes.slice(i + 1).forEach(n => {
           const distance = getDistance(node, n);
-          if (distance < 150) {
+          if (distance < 140) {
             lines.push({ n1: node, n2: n, distance });
           }
         });
